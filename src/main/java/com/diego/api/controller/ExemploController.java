@@ -24,7 +24,7 @@ public class ExemploController {
      */
     @GetMapping(value = "/v1/ola/{nome}")
     public ResponseEntity<String> olaNomeV1(@PathVariable("nome") String nome){
-        return ResponseEntity.ok(String.format("API v1: Olá %s!", nome));
+        return ResponseEntity.ok(String.format("Seja bem vindo na API v1: Olá %s!", nome));
     }
 
     /**
@@ -35,7 +35,7 @@ public class ExemploController {
      */
     @GetMapping(value = "/v2/ola/{nome}")
     public ResponseEntity<String> olaNomeV2(@PathVariable("nome") String nome){
-        return ResponseEntity.ok(String.format("API v2: Olá %s!", nome));
+        return ResponseEntity.ok(String.format("Seja bem vindo na API v2: Olá %s!", nome));
     }
 
     /**
